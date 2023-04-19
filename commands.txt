@@ -1,0 +1,45 @@
+1. ps -ef | grep tomcat
+2. netstat -anlp | grep -w "8080"
+3. telnet ipaddress portnumber
+4. mv source destination
+5. rm -rf filename
+6. cp source destination    
+    to copy all cp -r * destination
+7. yum install package
+8. wget link
+9. unzip package
+10. cd 
+11. pwd
+12. hostname
+13. uptime
+15. ping ipaddress
+16. sudo su -
+17. aws s3 ls
+18. aws configure
+    - access key - secret key
+19. aws s3 cp fileName s3://bucketName 
+    to copy files from local to s3 bucket
+20. aws s3 cp s3://bucketUrl
+    to download content from s3\
+21. echo name 
+22. touch/cat - to create files
+23. openssl - to scan the security policys
+24. curl http://localhost or curl http://127.0.0.1
+25. curl -I http://localhost - to get status code 
+26. ssh -i file.pem ec2-user@publicIpAddress
+29. curl http://169.254.169.254/region - to get the metadata of the ec2-instance
+
+particular database backup:
+-----------------------------
+mysqldump -h rdsEndpoint -u userName -p databaseName > backup_filename.sql
+
+restore database
+--------------------------
+mysqldump -h rdsEndpoint -u userName -p databaseName < backup_filename.sql
+
+to check the biggest file size in ec2
+---------------------------------------
+du -a | sort -n 
+df -a will give detailed output:
+Filesystem     1K-blocks    Used Available Use% Mounted on
+
