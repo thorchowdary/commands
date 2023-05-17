@@ -43,3 +43,9 @@ du -a | sort -n
 df -a will give detailed output:
 Filesystem     1K-blocks    Used Available Use% Mounted on
 
+sudo su - jenkins to switch to jenkins user
+
+to pass variables file while runtime:
+--------------------------------------
+terraform plan -var-file="dev.tfvars"
+terraform apply -var-file="dev.tfvars"
