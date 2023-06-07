@@ -56,3 +56,5 @@ unzip file_name.zip
 
 tar -zcvf archive.tar.gz files_to_compress
 tar -zxvf archive.tar.gz
+
+terraform destroy -target=aws_instance.example --- to destroy particular resource
