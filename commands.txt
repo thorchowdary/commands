@@ -29,6 +29,9 @@
 26. ssh -i file.pem ec2-user@publicIpAddress
 29. curl http://169.254.169.254/region - to get the metadata of the ec2-instance
 
+scp -i privatekey filetocopy user@ipaddress:path
+scp -i privatekey .pemfile ec2-user@ipaddress:/home/ec2-user
+
 particular database backup:
 -----------------------------
 mysqldump -h rdsEndpoint -u userName -p databaseName > backup_filename.sql
