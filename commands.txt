@@ -14,6 +14,7 @@
 13. uptime
 15. ping ipaddress
 16. sudo su -
+aws sts get-caller-identity
 17. aws s3 ls
 18. aws configure
     - access key - secret key
