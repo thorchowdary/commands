@@ -34,8 +34,9 @@ scp -i privatekey filetocopy user@ipaddress:path
 scp -i privatekey .pemfile ec2-user@ipaddress:/home/ec2-user
 
 to run the application in background mode we append with & at the end
-kibana &
-grafana &
+./kibana &
+./grafana &
+./ node exporters &
 
 particular database backup:
 -----------------------------
