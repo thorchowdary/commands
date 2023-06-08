@@ -33,6 +33,10 @@ aws sts get-caller-identity
 scp -i privatekey filetocopy user@ipaddress:path
 scp -i privatekey .pemfile ec2-user@ipaddress:/home/ec2-user
 
+to run the application in background mode we append with & at the end
+kibana &
+grafana &
+
 particular database backup:
 -----------------------------
 mysqldump -h rdsEndpoint -u userName -p databaseName > backup_filename.sql
